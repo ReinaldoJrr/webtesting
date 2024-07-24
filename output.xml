@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-24T11:44:13.652261" rpa="false" schemaversion="5">
+<suite id="s1" name="Tecnobank Teste" source="C:\tecnobankteste\robotframework\webtesting\tecnobank_teste.robot">
+<test id="s1-t1" name="caso de teste 01 - Remover Item do Carrinho" line="9">
+<kw name="Abrir Navegador" owner="tecnobank_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:44:13.761992" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<arg>browser=edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-24T11:44:13.761992" elapsed="1.129807"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-24T11:44:14.891799" elapsed="0.023788"/>
+</kw>
+<status status="PASS" start="2024-07-24T11:44:13.761992" elapsed="1.153595"/>
+</kw>
+<kw name="Dado que o usuário crie uma nova conta" owner="tecnobank_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:44:14.916584" level="INFO">Opening url 'https://www.demoblaze.com'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-24T11:44:14.916584" elapsed="1.144997"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${REGISTRAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-24T11:44:16.061581" elapsed="0.009966"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:44:16.071547" level="INFO">Clicking element '//a[@class='nav-link'][contains(.,'Sign up')]'.</msg>
+<arg>//a[@class='nav-link'][contains(.,'Sign up')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:44:16.071547" elapsed="0.019933"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:44:16.091480" level="INFO">Clicking element '//input[contains(@id,'sign-username')]'.</msg>
+<msg time="2024-07-24T11:44:16.248857" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-24T11:44:16.248857" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=126.0.2592.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6496B8132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF649641DE9+595465]
+	(No symbol) [0x00007FF64945E589]
+	(No symbol) [0x00007FF6494A3CAA]
+	(No symbol) [0x00007FF649498711]
+	(No symbol) [0x00007FF6494C1FFA]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF64949800D]
+	(No symbol) [0x00007FF6494C22E0]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF6494DB1EE]
+	(No symbol) [0x00007FF6494C1C63]
+	(No symbol) [0x00007FF64949766E]
+	(No symbol) [0x00007FF64949683C]
+	(No symbol) [0x00007FF649497221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6498796D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495BD8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495B0E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF649878665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF64964C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF64963CFA0+575424]
+	BaseThreadInitThunk [0x00007FFC7A1D7374+20]
+	RtlUserThreadStart [0x00007FFC7BE3CC91+33]
+</msg>
+<arg>//input[contains(@id,'sign-username')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-24T11:44:16.091480" elapsed="0.158373">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=126.0.2592.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6496B8132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF649641DE9+595465]
+	(No symbol) [0x00007FF64945E589]
+	(No symbol) [0x00007FF6494A3CAA]
+	(No symbol) [0x00007FF649498711]
+	(No symbol) [0x00007FF6494C1FFA]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF64949800D]
+	(No symbol) [0x00007FF6494C22E0]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF6494DB1EE]
+	(No symbol) [0x00007FF6494C1C63]
+	(No symbol) [0x00007FF64949766E]
+	(No symbol) [0x00007FF64949683C]
+	(No symbol) [0x00007FF649497221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6498796D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495BD8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495B0E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF649878665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF64964C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF64963CFA0+575424]
+	BaseThreadInitThunk [0x00007FFC7A1D7374+20]
+	RtlUserThreadStart [0x00007FFC7BE3CC91+33]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[contains(@id,'sign-username')]</arg>
+<arg>admintestetecnobank</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//input[contains(@id,'sign-password')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[contains(@id,'sign-password')]</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[@type='button'][contains(.,'Sign up')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-07-24T11:44:14.916584" elapsed="1.334265">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=126.0.2592.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6496B8132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF649641DE9+595465]
+	(No symbol) [0x00007FF64945E589]
+	(No symbol) [0x00007FF6494A3CAA]
+	(No symbol) [0x00007FF649498711]
+	(No symbol) [0x00007FF6494C1FFA]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF64949800D]
+	(No symbol) [0x00007FF6494C22E0]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF6494DB1EE]
+	(No symbol) [0x00007FF6494C1C63]
+	(No symbol) [0x00007FF64949766E]
+	(No symbol) [0x00007FF64949683C]
+	(No symbol) [0x00007FF649497221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6498796D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495BD8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495B0E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF649878665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF64964C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF64963CFA0+575424]
+	BaseThreadInitThunk [0x00007FFC7A1D7374+20]
+	RtlUserThreadStart [0x00007FFC7BE3CC91+33]
+</status>
+</kw>
+<kw name="E que o usuário faça o login com sucesso" owner="tecnobank_resources">
+<status status="NOT RUN" start="2024-07-24T11:44:16.250849" elapsed="0.000000"/>
+</kw>
+<kw name="Quando Usuário compre três itens" owner="tecnobank_resources">
+<status status="NOT RUN" start="2024-07-24T11:44:16.250849" elapsed="0.000000"/>
+</kw>
+<kw name="E Usuário remove um item dentro do Carrinho" owner="tecnobank_resources">
+<status status="NOT RUN" start="2024-07-24T11:44:16.250849" elapsed="0.000000"/>
+</kw>
+<kw name="E atualize a página" owner="tecnobank_resources">
+<status status="NOT RUN" start="2024-07-24T11:44:16.251847" elapsed="0.000000"/>
+</kw>
+<doc>Esse teste verifica se a função remover do carrinho é funcional</doc>
+<tag>menus</tag>
+<tag>remover item</tag>
+<status status="FAIL" start="2024-07-24T11:44:13.760997" elapsed="2.490850">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=126.0.2592.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6496B8132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF649641DE9+595465]
+	(No symbol) [0x00007FF64945E589]
+	(No symbol) [0x00007FF6494A3CAA]
+	(No symbol) [0x00007FF649498711]
+	(No symbol) [0x00007FF6494C1FFA]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF64949800D]
+	(No symbol) [0x00007FF6494C22E0]
+	(No symbol) [0x00007FF649498147]
+	(No symbol) [0x00007FF6494DB1EE]
+	(No symbol) [0x00007FF6494C1C63]
+	(No symbol) [0x00007FF64949766E]
+	(No symbol) [0x00007FF64949683C]
+	(No symbol) [0x00007FF649497221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6498796D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495BD8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6495B0E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF649878665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF64964C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF649646E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF64963CFA0+575424]
+	BaseThreadInitThunk [0x00007FFC7A1D7374+20]
+	RtlUserThreadStart [0x00007FFC7BE3CC91+33]
+</status>
+</test>
+<doc>Essa suite testa remover item de carrinho</doc>
+<status status="FAIL" start="2024-07-24T11:44:13.653258" elapsed="2.600581"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">menus</stat>
+<stat pass="0" fail="1" skip="0">remover item</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tecnobank Teste">Tecnobank Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
