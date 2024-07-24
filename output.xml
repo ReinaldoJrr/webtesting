@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-24T11:44:13.652261" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-24T14:42:31.972544" rpa="false" schemaversion="5">
 <suite id="s1" name="Tecnobank Teste" source="C:\tecnobankteste\robotframework\webtesting\tecnobank_teste.robot">
 <test id="s1-t1" name="caso de teste 01 - Remover Item do Carrinho" line="9">
 <kw name="Abrir Navegador" owner="tecnobank_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-24T11:44:13.761992" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<msg time="2024-07-24T14:42:32.082562" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
 <arg>browser=edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-24T11:44:13.761992" elapsed="1.129807"/>
+<status status="PASS" start="2024-07-24T14:42:32.081530" elapsed="1.227052"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-24T11:44:14.891799" elapsed="0.023788"/>
+<status status="PASS" start="2024-07-24T14:42:33.308582" elapsed="0.025052"/>
 </kw>
-<status status="PASS" start="2024-07-24T11:44:13.761992" elapsed="1.153595"/>
+<status status="PASS" start="2024-07-24T14:42:32.081530" elapsed="1.252104"/>
 </kw>
 <kw name="Dado que o usuário crie uma nova conta" owner="tecnobank_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-07-24T11:44:14.916584" level="INFO">Opening url 'https://www.demoblaze.com'</msg>
+<msg time="2024-07-24T14:42:33.334630" level="INFO">Opening url 'https://www.demoblaze.com'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-07-24T11:44:14.916584" elapsed="1.144997"/>
+<status status="PASS" start="2024-07-24T14:42:33.334630" elapsed="1.217476"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${REGISTRAR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-24T11:44:16.061581" elapsed="0.009966"/>
+<status status="PASS" start="2024-07-24T14:42:34.552106" elapsed="0.010967"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-24T11:44:16.071547" level="INFO">Clicking element '//a[@class='nav-link'][contains(.,'Sign up')]'.</msg>
+<msg time="2024-07-24T14:42:34.564067" level="INFO">Clicking element '//a[@class='nav-link'][contains(.,'Sign up')]'.</msg>
 <arg>//a[@class='nav-link'][contains(.,'Sign up')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-24T11:44:16.071547" elapsed="0.019933"/>
+<status status="PASS" start="2024-07-24T14:42:34.564067" elapsed="0.022922"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-24T11:44:16.091480" level="INFO">Clicking element '//input[contains(@id,'sign-username')]'.</msg>
-<msg time="2024-07-24T11:44:16.248857" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-07-24T11:44:16.248857" level="FAIL">ElementNotInteractableException: Message: element not interactable
+<msg time="2024-07-24T14:42:34.586989" level="INFO">Clicking element '//input[contains(@id,'sign-username')]'.</msg>
+<msg time="2024-07-24T14:42:34.758077" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-24T14:42:34.758077" level="FAIL">ElementNotInteractableException: Message: element not interactable
   (Session info: MicrosoftEdge=126.0.2592.113)
 Stacktrace:
 	GetHandleVerifier [0x00007FF6496B8132+13538]
@@ -67,7 +67,7 @@ Stacktrace:
 </msg>
 <arg>//input[contains(@id,'sign-username')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-07-24T11:44:16.091480" elapsed="0.158373">ElementNotInteractableException: Message: element not interactable
+<status status="FAIL" start="2024-07-24T14:42:34.586989" elapsed="0.174078">ElementNotInteractableException: Message: element not interactable
   (Session info: MicrosoftEdge=126.0.2592.113)
 Stacktrace:
 	GetHandleVerifier [0x00007FF6496B8132+13538]
@@ -101,25 +101,25 @@ Stacktrace:
 <arg>//input[contains(@id,'sign-username')]</arg>
 <arg>admintestetecnobank</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.761067" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//input[contains(@id,'sign-password')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.761067" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>//input[contains(@id,'sign-password')]</arg>
 <arg>12345</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.761067" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//button[@type='button'][contains(.,'Sign up')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-24T11:44:16.249853" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.761067" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-07-24T11:44:14.916584" elapsed="1.334265">ElementNotInteractableException: Message: element not interactable
+<status status="FAIL" start="2024-07-24T14:42:33.334630" elapsed="1.426437">ElementNotInteractableException: Message: element not interactable
   (Session info: MicrosoftEdge=126.0.2592.113)
 Stacktrace:
 	GetHandleVerifier [0x00007FF6496B8132+13538]
@@ -150,21 +150,24 @@ Stacktrace:
 </status>
 </kw>
 <kw name="E que o usuário faça o login com sucesso" owner="tecnobank_resources">
-<status status="NOT RUN" start="2024-07-24T11:44:16.250849" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.761067" elapsed="0.000997"/>
 </kw>
 <kw name="Quando Usuário compre três itens" owner="tecnobank_resources">
-<status status="NOT RUN" start="2024-07-24T11:44:16.250849" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.762064" elapsed="0.000000"/>
 </kw>
 <kw name="E Usuário remove um item dentro do Carrinho" owner="tecnobank_resources">
-<status status="NOT RUN" start="2024-07-24T11:44:16.250849" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.762064" elapsed="0.000000"/>
 </kw>
 <kw name="E atualize a página" owner="tecnobank_resources">
-<status status="NOT RUN" start="2024-07-24T11:44:16.251847" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-24T14:42:34.762064" elapsed="0.000000"/>
+</kw>
+<kw name="Então sistema deve remover item do carrinho" owner="tecnobank_resources">
+<status status="NOT RUN" start="2024-07-24T14:42:34.762064" elapsed="0.000997"/>
 </kw>
 <doc>Esse teste verifica se a função remover do carrinho é funcional</doc>
 <tag>menus</tag>
 <tag>remover item</tag>
-<status status="FAIL" start="2024-07-24T11:44:13.760997" elapsed="2.490850">ElementNotInteractableException: Message: element not interactable
+<status status="FAIL" start="2024-07-24T14:42:32.081530" elapsed="2.681531">ElementNotInteractableException: Message: element not interactable
   (Session info: MicrosoftEdge=126.0.2592.113)
 Stacktrace:
 	GetHandleVerifier [0x00007FF6496B8132+13538]
@@ -195,7 +198,7 @@ Stacktrace:
 </status>
 </test>
 <doc>Essa suite testa remover item de carrinho</doc>
-<status status="FAIL" start="2024-07-24T11:44:13.653258" elapsed="2.600581"/>
+<status status="FAIL" start="2024-07-24T14:42:31.972544" elapsed="2.792510"/>
 </suite>
 <statistics>
 <total>
